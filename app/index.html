@@ -4,13 +4,385 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/css/style.css">
     <link rel="stylesheet" href="styles/css/normalize.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <script defer src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script defer src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script defer src="javascript/slider.js"></script>
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__navigation">
+                <div class="logo">
+                    <a href="#">
+                        <img src="/images/logo.png" alt="" class="logo_img">
+                    </a>
+                </div>
 
+                <nav class="header__menu">
+                    <li class="header__item"><a class="link" href="#">home</a></li>
+                    <li class="header__item"><a class="link" href="#">featires</a></li>
+                    <li class="header__item"><a class="link" href="#">shop</a></li>
+                    <li class="header__item"><a class="link" href="#">blog</a></li>
+                    <li class="header__item"><a class="link" href="#">accessories</a></li>
+                    <li class="header__item"><a class="link" href="#">contact</a></li>
+                </nav>
+            </div>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="slide-image" src="/images/bannerjpg.jpg" alt="">
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </header>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="title">why choose us</div>
+
+            <hr class="divider">
+
+            <div class="advantages__list">
+                <div class="advantages__item">
+                    <div class="advantages__text">
+                        <div class="item-title">modern desing</div>
+                        <div class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestiae quidem dolorem laudantium possimus porro voluptas placeat, quibusdam quo eligendi rem nam.</div>
+                    </div>
+
+                    <div class="advantages__logo">
+                        <img src="/images/icons/features-1.png" alt="" class="advantages__icon">
+                    </div>
+                </div>
+
+                <div class="advantages__item">
+                    <div class="advantages__logo">
+                        <img src="/images/icons/features-2.png" alt="" class="advantages__icon">
+                    </div>
+
+                    <div class="advantages__text">
+                        <div class="item-title">modern desing</div>
+                        <div class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestiae quidem dolorem laudantium possimus porro voluptas placeat, quibusdam quo eligendi rem nam.</div>
+                    </div>
+                </div>
+
+                <div class="advantages__item">
+                    <div class="advantages__text">
+                        <div class="item-title">modern desing</div>
+                        <div class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestiae quidem dolorem laudantium possimus porro voluptas placeat, quibusdam quo eligendi rem nam.</div>
+                    </div>
+
+                    <div class="advantages__logo">
+                        <img src="/images/icons/features-3.png" alt="" class="advantages__icon">
+                    </div>
+                </div>
+
+                <div class="advantages__item">
+                    <div class="advantages__logo">
+                        <img src="/images/icons/features-4.png" alt="" class="advantages__icon">
+                    </div>
+
+                    <div class="advantages__text">
+                        <div class="item-title">modern desing</div>
+                        <div class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestiae quidem dolorem laudantium possimus porro voluptas placeat, quibusdam quo eligendi rem nam.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="banners">
+        <div class="banner__item">
+            <img src="/images/banner-1.jpg" alt="" class="banner__image">
+        </div>
+
+        <div class="banner__item">
+            <img src="/images/banner-2.jpg" alt="" class="banner__image">
+        </div>
+
+        <div class="banner__item">
+            <img src="/images/banner-3.jpg" alt="" class="banner__image">
+        </div>
+
+        <div class="banner__item">
+            <img src="/images/banner-4.jpg" alt="" class="banner__image">
+        </div>
+
+        <div class="banner__item">
+            <img src="/images/banner-5.jpg" alt="" class="banner__image">
+        </div>
+
+        <div class="banner__item">
+            <img src="/images/banner-6.jpg" alt="" class="banner__image">
+        </div>
+    </section> -->
+
+    <section class="collection">
+        <div class="container">
+            <div class="title">our collection</div>
+            <hr class="divider">
+
+            <div class="collection__list">
+                <div class="collection__item">
+                    <div class="collection__preview-image">
+                        <img src="/images/collection/1.jpg" alt="" class="collection__image">
+                    </div>
+
+                    <div style="padding: 10px;">
+                        <div class="item-title transparent">corona chair</div>
+                        <div class="item-description">Printed evening derss with straight sleeves</div>
+
+                        <div class="item-cost">$ 72.50</div>
+                    </div>
+                </div>
+
+                <div class="collection__item">
+                    <div class="collection__preview-image">
+                        <img src="/images/collection/2.jpg" alt="" class="collection__image">
+                    </div>
+
+                    <div style="padding: 10px;">
+                        <div class="item-title transparent">corona chair</div>
+                        <div class="item-description">Printed evening derss with straight sleeves</div>
+
+                        <div class="item-cost">$ 72.50</div>
+                    </div>
+                </div>
+
+                <div class="collection__item">
+                    <div class="collection__preview-image">
+                        <img src="/images/collection/3.jpg" alt="" class="collection__image">
+                    </div>
+
+                    <div style="padding: 10px;">
+                        <div class="item-title transparent">corona chair</div>
+                        <div class="item-description">Printed evening derss with straight sleeves</div>
+
+                        <div class="item-cost">$ 72.50</div>
+                    </div>
+                </div>
+
+                <div class="collection__item">
+                    <div class="collection__preview-image">
+                        <img src="/images/collection/4.jpg" alt="" class="collection__image">
+                    </div>
+
+                    <div style="padding: 10px;">
+                        <div class="item-title transparent">corona chair</div>
+                        <div class="item-description">Printed evening derss with straight sleeves</div>
+
+                        <div class="item-cost">$ 72.50</div>
+                    </div>
+                </div>
+
+                <div class="collection__item">
+                    <div class="collection__preview-image">
+                        <img src="/images/collection/5.jpg" alt="" class="collection__image">
+                    </div>
+
+                    <div style="padding: 10px;">
+                        <div class="item-title transparent">corona chair</div>
+                        <div class="item-description">Printed evening derss with straight sleeves</div>
+
+                        <div class="item-cost">$ 72.50</div>
+                    </div>
+                </div>
+
+                <div class="collection__item">
+                    <div class="collection__preview-image">
+                        <img src="/images/collection/6.jpg" alt="" class="collection__image">
+                    </div>
+
+                    <div style="padding: 10px;">
+                        <div class="item-title transparent">corona chair</div>
+                        <div class="item-description">Printed evening derss with straight sleeves</div>
+
+                        <div class="item-cost">$ 72.50</div>
+                    </div>
+                </div>
+
+                <div class="collection__item">
+                    <div class="collection__preview-image">
+                        <img src="/images/collection/1.jpg" alt="" class="collection__image">
+                    </div>
+
+                    <div style="padding: 10px;">
+                        <div class="item-title transparent">corona chair</div>
+                        <div class="item-description">Printed evening derss with straight sleeves</div>
+
+                        <div class="item-cost">$ 72.50</div>
+                    </div>
+                </div>
+
+                <div class="collection__item">
+                    <div class="collection__preview-image">
+                        <img src="/images/collection/2.jpg" alt="" class="collection__image">
+                    </div>
+
+                    <div style="padding: 10px;">
+                        <div class="item-title transparent">corona chair</div>
+                        <div class="item-description">Printed evening derss with straight sleeves</div>
+
+                        <div class="item-cost">$ 72.50</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="designers" style="background-image: url('/images/background.jpg');">
+        <div class="container">
+            <div class="title">our designers</div>
+            <hr class="divider">
+
+            <div class="designers__list">
+                <div class="designer__item">
+                    <div class="designer__photo">
+                        <img src="/images/designers/designer-1.jpg" alt="" class="designer__image">
+                    </div>
+
+                    <h2 class="designer__name">Bertil Stam</h2>
+                </div>
+
+                <div class="designer__item">
+                    <div class="designer__photo">
+                        <img src="/images/designers/designer-2.jpg" alt="" class="designer__image">
+                    </div>
+
+                    <h2 class="designer__name">Janet Park</h2>
+                </div>
+
+                <div class="designer__item">
+                    <div class="designer__photo">
+                        <img src="/images/designers/designer-3.jpg" alt="" class="designer__image">
+                    </div>
+
+                    <h2 class="designer__name">Wm Munoz</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="title">our projects</div>
+        <hr class="divider">
+
+        <div class="project__list">
+            <div class="project__item">
+                <h2 class="item-title">modern living room</h2>
+                <img src="/images/projects/project-1.jpg" alt="" class="project__proof">
+            </div>
+
+            <div class="project__item">
+                <h2 class="item-title">modern living room</h2>
+                <img src="/images/projects/project-2.jpg" alt="" class="project__proof">
+            </div>
+
+            <div class="project__item">
+                <h2 class="item-title">modern living room</h2>
+                <img src="/images/projects/project-3.jpg" alt="" class="project__proof">
+            </div>
+
+            <div class="project__item">
+                <h2 class="item-title">modern living room</h2>
+                <img src="/images/projects/project-4.jpg" alt="" class="project__proof">
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <div class="title">from our blog</div>
+            <hr class="divider">
+
+            <div class="blog__list">
+                <div class="blog__item">
+                    <div class="blog__preview">
+                        <img src="/images/articles/dan-gold-218879.jpg" alt="" class="blog__image">
+                    </div>
+
+                    <div class="blog__text">
+                        <div class="item-title">our new work space</div>
+                        <div class="item-description">Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</div>
+
+                        <button class="btn">read more</button>
+                    </div>
+                </div>
+
+                <div class="blog__item">
+                    <div class="blog__preview">
+                        <img src="/images/articles/suhyeon-choi-195419.jpg" alt="" class="blog__image">
+                    </div>
+
+                    <div class="blog__text">
+                        <div class="item-title">our new work space</div>
+                        <div class="item-description">Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</div>
+
+                        <button class="btn">read more</button>
+                    </div>
+                </div>
+
+                <div class="blog__item">
+                    <div class="blog__preview">
+                        <img src="/images/articles/jason-briscoe-152940.jpg" alt="" class="blog__image">
+                    </div>
+
+                    <div class="blog__text">
+                        <div class="item-title">our new work space</div>
+                        <div class="item-description">Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!</div>
+
+                        <button class="btn">read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__item">
+                    <h2 class="item-title">call us now</h2>
+                    <h2 class="item-description">office telephone: (251) 546-9442</h2>
+                </div>
+
+                <div class="footer__item">
+                    <h2 class="item-title">come visit us</h2>
+                    <h2 class="item-description">123 6th St. Melbourne, FL 32904</h2>
+                </div>
+
+                <div class="footer__item">
+                    <div class="item-title">send a message</div>
+                    <h2 class="item-description">Email: sipport@pohu.vn</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="logo">
+                    <a href="#">
+                        <img src="/images/logo.png" alt="" class="logo_img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

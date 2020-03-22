@@ -1,0 +1,325 @@
+$site-background: #f9fafc
+$primary-yellow: #ffce76
+$secondary-black: #181817
+
+
+$large-text: 40px
+$secondary-title: 30px
+$item-title: 20px
+
+$item-description: 14px
+$color-description: #6d6d6d
+
+*, :after, :before
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+body
+    font-family: 'Poppins'
+    background: $site-background
+
+    .container
+        margin: 0 auto
+        max-width: 1170px
+        //background: #ff8000
+
+    .title
+        font-weight: 600
+        text-align: center
+        font-size: $large-text
+        color: $primary-yellow
+        padding-top: 100px
+        text-transform: uppercase
+
+    .item-title
+        padding-bottom: 20px
+        font-weight: 400
+        color: $primary-yellow
+        font-size: $item-title
+        text-transform: uppercase
+
+    .item-description
+        font-weight: 300
+        color: $color-description
+        font-size: $item-description
+
+    .item-cost
+        margin-top: 25px
+        font-size: 20px
+        font-weight: 600
+
+    .link
+        color: #ffffff
+        text-decoration: none
+        transition: all .2s
+        &:hover
+            color: $primary-yellow
+
+    .transparent
+        color: $secondary-black
+
+    .divider
+        border: 0px
+        width: 10px
+        height: 10px
+        background: $primary-yellow
+        transform: rotate(45deg)
+        margin-bottom: 100px
+        &::after
+            position: absolute
+            content: ''
+            top: 0
+            right: 0
+            margin: 103px 0px 0px 0px
+            width: 210px
+            height: 1px
+            background: #5e5e5d
+            transform: rotate(-45deg)
+        &::before
+            position: absolute
+            content: ''
+            top: 0
+            margin: -97px 0px 0px 0px
+            width: 210px
+            height: 1px
+            background: #5e5e5d
+            transform: rotate(-45deg)
+
+    .btn
+        width: 40%
+        border: 0
+        outline: 0
+        padding: 10px
+        cursor: pointer
+        font-weight: 600
+        color: $secondary-black
+        background: $primary-yellow
+        text-transform: uppercase
+
+    .header
+        height: 100vh
+        background: $secondary-black
+
+        .header__navigation
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            padding: 35px 0px
+
+            .header__menu
+                color: #ffffff
+                display: flex
+
+                .header__item
+                    list-style: none
+                    padding-right: 55px
+                    text-transform: uppercase
+                    &:last-child
+                        padding-right: 0px
+
+        .swiper-container
+            width: 100%
+            height: 100%
+
+            .swiper-button-prev
+                margin-left: 100px
+            .swiper-button-next
+                margin-right: 100px
+
+            .swiper-button-next, .swiper-button-prev
+                    border-radius: 50%
+                    width: 75px
+                    height: 75px
+                    color: #ffffff
+                    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.14)
+                    border: 1px solid #ffffff
+
+                    &::after
+                        font-size: 25px
+
+            .swiper-wrapper
+
+                .swiper-slide
+                    width: 100%
+                    height: 100%
+
+                    .slide-image
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+
+
+    .advantages
+        display: flex
+        background: $secondary-black
+
+        .advantages__list
+            display: grid
+            padding: 0px 0px 140px 0px
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 70px
+
+            .advantages__item
+                display: flex
+                flex-direction: row
+                &:first-child, &:nth-last-child(2)
+                    text-align: right
+                    .advantages__logo
+                        padding-left: 20px
+
+                .advantages__logo
+                    width: 100px
+                    padding-right: 20px
+
+                    .advantages__icon
+                        width: 100%
+
+                .advantages__text
+
+    .collection
+        .collection__list
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            grid-gap: 25px
+
+            .collection__item
+                background: #ffffff
+
+                .collection__preview-image
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    height: 250px
+
+                    .collection__image
+                        height: 250px
+
+    .designers
+        color: #ffffff
+        margin-top: 150px
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+
+        .designers__list
+            display: flex
+            flex-direction: row
+            justify-content: center
+            padding-bottom: 100px
+
+            .designer__item
+                display: flex
+                flex-direction: column
+                margin-right: 20px
+                &:last-child
+                    margin-right: 0px
+
+                .designer__photo
+                    width: 375px
+                    object-fit: cover
+                    .designer__image
+                        width: 100%
+                        object-fit: cover
+
+                .designer__name
+                    font-size: $secondary-title
+                    &::after
+                        position: absolute
+                        content: ''
+                        height: 3px
+                        width: 150px
+                        margin: 17px 0px 17px 10px
+                        background: $primary-yellow
+
+    .projects
+        .project__list
+            display: grid
+            height: 1000px
+            grid-template-columns: repeat(4, 1fr)
+
+            .project__item
+                width: 100%
+                height: 1000px
+                position: relative
+                transition: all 1s
+
+                .project__proof
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    object-position: 0 0
+                    filter: brightness(60%)
+
+                .item-title
+                    position: absolute
+                    z-index: 999
+                    top: 0
+                    max-width: 300px
+                    font-weight: 600
+                    color: #ffffff
+                    letter-spacing: 7px
+                    padding: 50px
+
+                &:hover
+                    .project__proof
+                        cursor: pointer
+                        filter: brightness(90%)
+
+    .blog
+        .blog__list
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-column-gap: 30px
+
+            .blog__item
+                display: flex
+                background: #ffffff
+                flex-direction: column
+
+                .blog__preview
+                    width: 375px
+                    height: 270px
+                    overflow: hidden
+
+                    .blog__image
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+
+                .blog__text
+                    padding: 10px
+
+                    .item-title
+                        font-weight: 600
+                        color: $secondary-black
+
+                    .item-description
+                        margin-bottom: 15px
+
+    .footer
+        padding: 60px
+        margin-top: 120px
+        background: $secondary-black
+
+        .row
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            &:last-child
+                margin-top: 50px
+
+            .footer__item
+                display: flex
+                flex-direction: column
+                border-left: 2px solid $primary-yellow
+
+                .item-title
+                    font-weight: 600
+                    letter-spacing: 2px
+
+                .item-description
+                    color: #e3e3e3
+
+                .item-title, .item-description
+                    margin: 0
+                    padding: 5px 0px 0px 20px
